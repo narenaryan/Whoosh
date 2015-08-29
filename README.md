@@ -11,7 +11,8 @@ Now launch a web server for serving the Whoosh. In python yuo can do that using
 
 >`$ python -m SimpleHTTPServer`
 
-and visit (http://localhost:8000/launch_whoosh.html)
+and visit below link
+>(http://localhost:8000/launch_whoosh.html)
 
 That's it . You will be taken to join White board  conference page. Now Join that.
 
