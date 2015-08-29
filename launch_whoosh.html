@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Janus WebRTC Gateway: Audio Bridge Demo</title>
+<title>Whoosh ,Real time Whiteboard</title>
 <script type="text/javascript" src="jquery.min.js" ></script>
 <script type="text/javascript" src="jquery.blockUI.js" ></script>
 <script type="text/javascript" src="js/bootstrap.js"></script>
@@ -17,13 +17,14 @@
 <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"/>
 </head>
 <body>
-
+<!--
 <a href="https://github.com/meetecho/janus-gateway"><img style="position: absolute; top: 0; left: 0; border: 0; z-index: 1001;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_darkblue_121621.png" alt="Fork me on GitHub"></a>
+-->
 
 <nav class="navbar navbar-default navbar-static-top">
 <div class="container">
 	<div class="navbar-header">
-		<a class="navbar-brand" href="index.html">Whoosh</a>
+		<a class="navbar-brand" href="launch_whoosh.html">Whoosh</a>
 		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
@@ -32,7 +33,7 @@
 	</div>
 	<div class="navbar-collapse collapse">
 		<ul class="nav navbar-nav">
-			<li><a href="index.html">Home</a></li>
+			<li><a href="launch_whoosh.html">Home</a></li>
 		</ul>
 		<div class="navbar-header navbar-right">
           <!--
@@ -47,26 +48,13 @@
 	<div class="row">
 		<div class="col-md-12">
 			<div class="page-header">
-				<h1>Welcome to Whoosh , Audio Conference whiteboard
-					<button class="btn btn-default" autocomplete="off" id="start">Start</button>
+				<h1>Welcome to Whoosh , Real time whiteboard
 				</h1>
 			</div>
 			<div class="container" id="details">
 				<div class="row">
 					<div class="col-md-12">
-						<h3>Demo details</h3>
-						<p>The Audio Bridge demo is a simple example of how to implement
-						an audio conferencing application through Janus. Since it makes use
-						of the AudioBridge plugin, all the audio contributions will be mixed,
-						which means that a single PeerConnection will be created no matter
-						how many participants will join the room.</p>
-						<p>To try the demo, just insert a username to join the default audio
-						room that is configured. This will add you to the mixed audio conference.
-						A container on the left will display a list of the other participants
-						in the room as they join, with a simple indicator to inform you whether
-						they're muted or not. You can mute/unmute yourself using the icon that
-						will appear next to your name.</p>
-						<p>Press the <code>Start</code> button above to launch the demo.</p>
+										<button class="btn btn-hg btn-embossed btn-info" autocomplete="off" id="start">Start</button>
 					</div>
 				</div>
 			</div>
@@ -113,7 +101,7 @@
 
 	<hr>
 	<div class="footer">
-	<p>Janus WebRTC Gateway &copy; <a href="http://www.meetecho.com">Meetecho</a> 2014</p>
+	<p>Whoosh @Naren&Plaban &copy; <a href="https://github.com/narenaryan/Whoosh">Whoosh</a> @2015</p>
 	</div>
 </div>
 
