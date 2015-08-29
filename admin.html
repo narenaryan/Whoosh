@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Janus WebRTC Gateway: Admin/Monitor</title>
+<script type="text/javascript" src="jquery.min.js" ></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/bootbox.min.js"></script>
+<script type="text/javascript" src="admin.js"></script>
+<link rel="stylesheet" href="css/cerulean/bootstrap.css" type="text/css"/>
+<link rel="stylesheet" href="css/demo.css" type="text/css"/>
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"/>
+</head>
+<body>
+	
+<a href="https://github.com/meetecho/janus-gateway"><img style="position: absolute; top: 0; left: 0; border: 0; z-index: 1001;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_darkblue_121621.png" alt="Fork me on GitHub"></a>
+
+<nav class="navbar navbar-default navbar-static-top">
+<div class="container">
+	<div class="navbar-header">
+		<a class="navbar-brand" href=".">Janus</a>
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+	</div>
+	<div class="navbar-collapse collapse">
+		<ul class="nav navbar-nav">
+			<li><a href="index.html">Home</a></li>
+			<li class="dropdown active"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Demos <b class="caret"></b></a>
+				<ul class="dropdown-menu">
+					<li class="active"><a href="demos.html">Index</a></li>
+					<li class="divider"></li>
+					<li><a href="echotest.html">Echo Test</a></li>
+					<li><a href="streamingtest.html">Streaming</a></li>
+					<li><a href="videocalltest.html">Video Call</a></li>
+					<li><a href="siptest.html">SIP Gateway</a></li>
+					<li><a href="videomcutest.html">Video MCU</a></li>
+					<li><a href="audiobridgetest.html">Audio Conference</a></li>
+					<li><a href="voicemailtest.html">Voice Mail</a></li>
+					<li><a href="recordplaytest.html">Recorder/Playout</a></li>
+					<li><a href="screensharingtest.html">Screen Sharing</a></li>
+					<li class="divider"></li>
+					<li class="active"><a href="admin.html">Admin/Monitor</a></li>
+				</ul>
+			</li>
+			<li><a href="docs">Documentation</a></li>
+			<li><a href="citeus.html">Cite us!</a></li>
+		</ul>
+		<div class="navbar-header navbar-right">
+			<ul class="nav navbar-nav">
+				<li><a href="http://groups.google.com/d/forum/meetecho-janus" class="navbar-link"><b>Discuss Janus</b></a></li>
+				<li><a href="http://www.meetecho.com" class="navbar-link"><img src="meetecho-logo-white.png"/> <b>Meetecho</b></a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+</nav>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="page-header">
+				<h1>Janus WebRTC Gateway: Admin/Monitor</h1>
+			</div>
+			<p>This is just an example of how you can build an UI on top of the
+			existing <code>Admin/Monitor</code> interface. This page will only
+			work as it is if you enabled the API (which is disabled by default)
+			and you're using the default values. Edit the backend settings in
+			the <code>admin.js</code> JavaScript code to adapt it to your
+			configuration if you changed anything.</p>
+			<div id="sessions" class="col-md-2">
+				<h4>Sessions (<span id="sessions-num">0</span>) <i id="update-sessions" class="fa fa-refresh" title="Update list of sessions" style="cursor: pointer;"></i></h4>
+				<div id="sessions-list" class="list-group">
+				</div>
+			</div>
+			<div id="handles" class="col-md-2">
+				<h4>Handles (<span id="handles-num"></span>) <i id="update-handles" class="fa fa-refresh" title="Update list of handles" style="cursor: pointer;"></i></h4>
+				<div id="handles-list" class="list-group">
+				</div>
+			</div>
+			<div id="info" class="col-md-8">
+				<h4>Handle Info <i id="update-handle" class="fa fa-refresh" title="Update handle info" style="cursor: pointer;"></i></h4>
+				<pre id="handle-info"></pre>
+			</div>
+		</div>
+	</div>
+
+	<hr>
+	<div class="footer">
+	<p>Janus WebRTC Gateway &copy; <a href="http://www.meetecho.com">Meetecho</a> 2014</p>
+	</div>
+</div>
+</body>
+</html>
