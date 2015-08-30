@@ -1,7 +1,7 @@
 ;(function(){
   var Drawing = {};
 
-  Drawing.CANVAS_WIDTH = 800;
+  Drawing.CANVAS_WIDTH = 1100;
   Drawing.CANVAS_HEIGHT = 600;
 
   Drawing.init = function() {
