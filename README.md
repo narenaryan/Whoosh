@@ -9,7 +9,7 @@ Next clone the Whoosh repository
 
 Now launch a web server for serving the Whoosh. In python yuo can do that using
 
->`$ python -m SimpleHTTPServer`
+$ python -m SimpleHTTPServer
 
 and visit below link
 >(http://localhost:8000/launch_whoosh.html)
